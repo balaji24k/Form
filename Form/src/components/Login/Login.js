@@ -4,6 +4,7 @@ import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
 
+
 const Login = (props) => {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [emailIsValid, setEmailIsValid] = useState();
@@ -77,7 +78,7 @@ const Login = (props) => {
             collegeIsValid === false ? classes.invalid : ''
           }`}
         >
-          <label htmlFor="college">College</label>
+          <label htmlFor="college">College Name</label>
           <input
             type="text"
             id="college"
